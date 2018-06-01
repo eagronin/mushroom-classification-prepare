@@ -77,3 +77,25 @@ Maximum value across all attributes and samples:  1
 Minimum fraction of '1'-s across all attributes: 0.00049
 Maximum fraction of '1'-s across all attributes: 0.97538
 ```
+
+Next we partition the data into training and test sets and reduce the dimensionality of the feature space from 113 to two principal components.  The plot of the target against the principal componets for the training data is presented 
+in the [next section](link to analysis section).
+
+It is important to note that scaling of features is not necessary in this analysis, because all the features are dummy variables that take values of either 0 or 1.  
+
+PCA was fitted using the training data rather than the entire dataset in order to prevent leakage from the training data to the test data.
+
+```python
+# Define poisonous as 1 and edible as 0 for the target
+X = df2.iloc[:,2:]
+y = df2.iloc[:,1]            
+
+# Partition data into training and test sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state = 10)
+
+# Reduce dimensionality of the features from 113 to two principal components
+pca = PCA(n_components=2).fit(X_train)
+
+X_train = pca.transform(X_train)
+X_test = pca.transform(X_test)
+```
