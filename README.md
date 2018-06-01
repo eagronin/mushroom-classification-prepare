@@ -2,6 +2,11 @@
 
 This section will address the issue of missing values, convert the categorical features to dummies 
 and then reduce the dimensionality of the feature sapace to two principal compoenents.
+
+The description and extraction of the mushroom dataset are described in the [previous section](https://eagronin.github.io/mushroom-classification-acquire). 
+
+The analysis based on the processed data is described in the [next section](https://eagronin.github.io/mushroom-classification-analyze).
+
 Missing values in the mushroom dataset are identified as '?'.  Only one variable (stalk-root) appears to contain
 missing values.  The following code outputs summary statistics for the imported data:
 
@@ -79,7 +84,7 @@ Maximum fraction of '1'-s across all attributes: 0.97538
 ```
 
 Next we partition the data into training and test sets and reduce the dimensionality of the feature space from 113 to two principal components.  The plot of the target against the principal componets for the training data is presented 
-in the [next section](link to analysis section).
+in the [Results](https://eagronin.github.io/mushroom-classification-report).
 
 It is important to note that scaling of features is not necessary in this analysis, because all the features are dummy variables that take values of either 0 or 1.  
 
@@ -100,4 +105,4 @@ X_train = pca.transform(X_train)
 X_test = pca.transform(X_test)
 ```
 
-Next step: [Analysis](link)
+Next step: [Analysis](https://eagronin.github.io/mushroom-classification-analyze)
