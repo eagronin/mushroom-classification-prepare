@@ -9,6 +9,10 @@ Data description is provided in the [previous section](https://eagronin.github.i
 
 The analysis of the processed data is described in the [next section](https://eagronin.github.io/mushroom-classification-analyze).
 
+This project is based on materials from Applied Machine Learning in Python by University of Michigan on Coursera
+
+The analysis for this project was performed in Python.
+
 ## Data Exploration and Processing
 
 Missing values in the mushroom dataset are identified as '?'.  Only one variable (stalk-root) appears to contain
