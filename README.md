@@ -1,11 +1,15 @@
 # Data Preparation
 
+## Overview
+
 This section addresses the issue of missing values, converts categorical features to dummy variables 
 and reduces dimensionality of the feature space to two principal compoenents.
 
 Data description is provided in the [previous section](https://eagronin.github.io/mushroom-classification-acquire). 
 
 The analysis of the processed data is described in the [next section](https://eagronin.github.io/mushroom-classification-analyze).
+
+## Data Exploration and Processing
 
 Missing values in the mushroom dataset are identified as '?'.  Only one variable (stalk-root) appears to contain
 missing values.  The following code outputs summary statistics for the imported data:
