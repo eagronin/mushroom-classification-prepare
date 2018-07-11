@@ -3,7 +3,7 @@
 ## Overview
 
 This section addresses the issue of missing values, converts categorical features to dummy variables 
-and reduces dimensionality of the feature space to two principal compoenents.
+and reduces dimensionality of the feature space to two principal components.
 
 Data description is provided in the [previous section](https://eagronin.github.io/mushroom-classification-acquire). 
 
@@ -91,7 +91,7 @@ Minimum fraction of '1'-s across all attributes: 0.00049
 Maximum fraction of '1'-s across all attributes: 0.97538
 ```
 
-Next, we partition the data into training and test sets and reduce the dimensionality of the feature space from 113 attributes to two principal components.  The plot of the target as a function of the principal componets for the training data is presented in the [Results](https://eagronin.github.io/mushroom-classification-report) section.
+Next, we partition the data into training and test sets and reduce the dimensionality of the feature space from 113 attributes to two principal components.  The plot of the target as a function of the principal components for the training data is presented in the [Results](https://eagronin.github.io/mushroom-classification-report) section.
 
 It is important to note that scaling of features is not necessary in this analysis, because all the features are dummy variables that take values of either 0 or 1.  
 
